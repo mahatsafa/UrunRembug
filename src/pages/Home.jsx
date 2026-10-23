@@ -3,6 +3,7 @@ import Section from '../components/Section.jsx';
 import {
   brand,
   comparison,
+  partners,
   problems,
   roadmap,
   services,
@@ -92,6 +93,18 @@ export default function Home() {
               </span>
               <h3>{s.title}</h3>
               <p>{s.text}</p>
+            </article>
+          ))}
+        </div>
+      </Section>
+
+      <Section eyebrow="Mitra" title="Rencana Mitra Kunci">
+        <p className="lead">Pihak yang dituju sebagai mitra, sesuai Business Model Canvas UrunRembug.</p>
+        <div className="grid grid-3">
+          {partners.map((p) => (
+            <article className="card" key={p.name}>
+              <h3>{p.name}</h3>
+              {p.role && <p>{p.role}</p>}
             </article>
           ))}
         </div>

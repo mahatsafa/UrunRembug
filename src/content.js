@@ -137,6 +137,16 @@ export const comparison = [
   },
 ];
 
+// BMC UrunRembug - MIC 2026.pdf (Key Partners). Ini rencana mitra, bukan
+// kemitraan yang sudah resmi. Mitra tanpa keterangan di BMC dibiarkan tanpa role.
+export const partners = [
+  { name: 'BAZNAS/lembaga ZIS resmi', role: 'Sumber dana & legitimasi syariah' },
+  { name: 'Perusahaan pemilik dana CSR' },
+  { name: 'Koperasi & masjid', role: 'Jalur distribusi & kepercayaan komunitas' },
+  { name: 'Dinas Koperasi & UMKM', role: 'Sinergi regulasi & jangkauan' },
+  { name: 'Penyedia hosting/teknologi platform' },
+];
+
 // UrunRembug.pptx slide 12
 export const roadmap = [
   {
